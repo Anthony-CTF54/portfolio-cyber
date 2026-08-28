@@ -1,24 +1,102 @@
+* {
+  box-sizing: border-box;
+  }
+
 body {
-font-family: Arial, sans-serif;
 margin: 0;
-padding: 40px;
-background-color: #111;
-color: #eee;
+font-family: Arial, sans-serif;
+background-color: #0d1117;
+color: #e6edf3;
 }
 
-h1 {
-color: #00ff88;
+header {
+border-bottom: 1px solid #30363d;
+padding: 20px 8%;
 }
 
-h2 {
-color: #00ccff;
-margin-top: 40px;
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-p {
-line-height: 1.6;
+nav h1 {
+margin: 0;
+color: #39ff14;
 }
 
-ul {
-line-height: 1.8;
+nav ul {
+display: flex;
+list-style: none;
+gap: 25px;
+margin: 0;
+}
+
+nav a {
+color: #e6edf3;
+text-decoration: none;
+}
+
+nav a:hover {
+color: #39ff14;
+}
+
+main {
+max-width: 1000px;
+margin: auto;
+padding: 80px 30px;
+}
+
+section {
+margin-bottom: 120px;
+}
+
+#accueil {
+min-height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#accueil h2 {
+font-size: 4rem;
+margin: 10px 0;
+}
+
+.presentation {
+font-size: 1.3rem;
+max-width: 700px;
+line-height: 1.7;
+}
+
+.terminal {
+color: #39ff14;
+font-family: monospace;
+}
+
+.ctf-container {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 30px;
+}
+
+.ctf-card {
+background-color: #161b22;
+border: 1px solid #30363d;
+padding: 25px;
+border-radius: 10px;
+flex: 1;
+min-width: 220px;
+}
+
+.ctf-card:hover {
+border-color: #39ff14;
+}
+
+footer {
+text-align: center;
+padding: 30px;
+border-top: 1px solid #30363d;
+color: #8b949e;
 }
