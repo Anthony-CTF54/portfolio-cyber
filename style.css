@@ -75,10 +75,10 @@ font-family: monospace;
 }
 
 .ctf-container {
-display: flex;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
 gap: 15px;
-flex-wrap: wrap;
-margin-top: 30px;
+margin-top: 30px
 }
 
 .ctf-card {
@@ -86,8 +86,7 @@ background-color: #161b22;
 border: 1px solid #30363d;
 padding: 16px;
 border-radius: 8px;
-flex: 1;
-min-width: 220px;
+min-width: 0;
 color: #e6edf3;
 text-decoration: none;
 transition: 0.3s;
