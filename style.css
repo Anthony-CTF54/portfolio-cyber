@@ -76,7 +76,7 @@ font-family: monospace;
 
 .ctf-container {
 display: flex;
-gap: 20px;
+gap: 15px;
 flex-wrap: wrap;
 margin-top: 30px;
 }
@@ -84,14 +84,37 @@ margin-top: 30px;
 .ctf-card {
 background-color: #161b22;
 border: 1px solid #30363d;
-padding: 25px;
-border-radius: 10px;
+padding: 16px;
+border-radius: 8px;
 flex: 1;
 min-width: 220px;
+color: #e6edf3;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.ctf-card h3 {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.ctf-card p {
+margin: 8px 0;
+line-height: 1.4;
 }
 
 .ctf-card:hover {
 border-color: #39ff14;
+}
+
+.ctf-card:first-child:hover {
+border-color: #39ff14;
+box-shadow: 0 0 15px rgba(57, 255, 20, 0.25);
+}
+
+.ctf-card:nth-child(2):hover {
+border-color: #a855f7;
+box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
 }
 
 footer {
@@ -99,19 +122,4 @@ text-align: center;
 padding: 30px;
 border-top: 1px solid #30363d;
 color: #8b949e;
-}
-.ctf-card {
-    color: #e6edf3;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.ctf-card:first-child:hover {
-    border-color: #39ff14;
-    box-shadow: 0 0 15px rgba(57, 255, 20, 0.25);
-}
-
-.ctf-card:nth-child(2):hover {
-    border-color: #a855f7;
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
 }
